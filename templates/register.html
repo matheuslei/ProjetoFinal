@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <h2>Cadastro</h2>
+    <form method="POST" action="{{ url_for('register') }}">
+      {{ form.hidden_tag() }}
+      <p>
+        {{ form.email.label }}<br />
+        {{ form.email(size=32) }}<br />
+      </p>
+      <p>
+        {{ form.password.label }}<br />
+        {{ form.password(size=32) }}<br />
+      </p>
+      <p>
+        {{ form.nome_completo.label }}<br />
+        {{ form.nome_completo(size=32) }}<br />
+      </p>
+      <p>
+        {{ form.rua.label }}<br />
+        {{ form.rua(size=32) }}<br />
+      </p>
+      <p>
+        {{ form.numero.label }}<br />
+        {{ form.numero(size=32) }}<br />
+      </p>
+      <p>
+        {{ form.complemento.label }}<br />
+        {{ form.complemento(size=32) }}<br />
+      </p>
+      <p>
+        {{ form.bairro.label }}<br />
+        {{ form.bairro(size=32) }}<br />
+      </p>
+      <p>
+        {{ form.cidade.label }}<br />
+        {{ form.cidade(size=32) }}<br />
+      </p>
+      <p>
+        {{ form.estado.label }}<br />
+        {{ form.estado(size=32) }}<br />
+      </p>
+      <p>
+        {{ form.cep.label }}<br />
+        {{ form.cep(size=32) }}<br />
+      </p>
+      <p>
+        {{ form.telefone.label }}<br />
+        {{ form.telefone(size=32) }}<br />
+      </p>
+      <p>
+        {{ form.cpf.label }}<br />
+        {{ form.cpf(size=32) }}<br />
+      </p>
+      <p>{{ form.submit() }}</p>
+    </form>
+  </body>
+</html>
